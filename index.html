@@ -1,31 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psikiyatri Toplantıları</title>
+    <meta name="description" content="Psikiyatristler için buluşma platformu PsikiyatriToplantilari'na hoş geldiniz. Ruh sağlığı profesyonelleriyle bağlantı kurun, iş birliği yapın ve büyüyün.">
+    <meta name="keywords" content="psikiyatrist, toplantı, ruh sağlığı, ağ, psikiyatri, profesyoneller">
+    <meta name="author" content="PsikiyatriToplantilari">
+    <meta property="og:title" content="PsikiyatriToplantilari - Psikiyatristler için Buluşma Platformu">
+    <meta property="og:description" content="Psikiyatristler için buluşma platformu PsikiyatriToplantilari'na hoş geldiniz. Ruh sağlığı profesyonelleriyle bağlantı kurun, iş birliği yapın ve büyüyün.">
+    <meta property="og:image" content="https://psikiyatritoplantilari.com/logo.png">
+    <meta property="og:url" content="https://psikiyatritoplantilari.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PsikiyatriToplantilari - Psikiyatristler için Buluşma Platformu">
+    <meta name="twitter:description" content="Psikiyatristler için buluşma platformu PsikiyatriToplantilari'na hoş geldiniz. Ruh sağlığı profesyonelleriyle bağlantı kurun, iş birliği yapın ve büyüyün.">
+    <meta name="twitter:image" content="https://psikiyatritoplantilari.com/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://psikiyatritoplantilari.com/favicon.png">
+    
+    <!-- Logo for social sharing -->
+    <link rel="apple-touch-icon" href="https://psikiyatritoplantilari.com/logo.png">
+    
+    <!-- Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <title>PsikiyatriToplantilari - Psikiyatristler için Buluşma Platformu</title>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
-        <h1 class="text-3xl font-bold text-center mb-6">Psikiyatri Toplantıları!</h1>
-        <p class="text-gray-700 text-center mb-8">
-            Yeni gelen kongre ve toplantılardan haberdar olmak için formu doldurun
-        </p>
-        
-        <!-- Embedded Google Form -->
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScieHrfpJEAHW31WhpjrEfYPEejcVACsJupQuQjTyV_eb7VDA/viewform?embedded=true"
-                width="100%" 
-                height="500" 
-                frameborder="0" 
-                marginheight="0" 
-                marginwidth="0">
-            Loading…
-        </iframe>
-        
-        <p class="text-gray-600 text-sm text-center mt-4">
-            By signing up, you agree to our <a href="#" class="text-blue-500 hover:text-blue-700">Terms of Service</a> and <a href="#" class="text-blue-500 hover:text-blue-700">Privacy Policy</a>.
-        </p>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <!-- Logo -->
+                    <div>
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <img src="https://psikiyatritoplantilari.com/logo.png" alt="PsikiyatriToplantilari Logo" class="h-8 mr-2">
+                            <span class="font-semibold text-gray-500 text-lg">PsikiyatriToplantilari</span>
+                        </a>
+                    </div>
+                    <!-- Primary Navbar Items -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="#" class="py-4 px-2 text-gray-500 hover:text-blue-500">Ana Sayfa</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 hover:text-blue-500">Hakkımızda</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 hover:text-blue-500">Hizmetler</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 hover:text-blue-500">İletişim</a>
+                    </div>
+                </div>
+                <!-- Secondary Navbar Items -->
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="#" class="py-2 px-2 bg-blue-500 text-white rounded hover:bg-blue-600">Kaydol</a>
+                    <a href="#" class="py-2 px-2 text-gray-500 hover:text-blue-500">Giriş Yap</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-500 hover:text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden mobile-menu">
+            <ul>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white">Ana Sayfa</a></li>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white">Hakkımızda</a></li>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white">Hizmetler</a></li>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white">İletişim</a></li>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white">Kaydol</a></li>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white">Giriş Yap</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+            <!-- Logo -->
+            <div class="flex justify-center mb-6">
+                <img src="https://psikiyatritoplantilari.com/logo.png" alt="PsikiyatriToplantilari Logo" class="h-16">
+            </div>
+            
+            <h1 class="text-3xl font-bold text-center mb-6">PsikiyatriToplantilari'na Hoş Geldiniz!</h1>
+            <p class="text-gray-700 text-center mb-8">
+                Psikiyatristler için özel olarak tasarlanmış bu platformda, meslektaşlarınızla bağlantı kurun, iş birliği yapın ve birlikte büyüyün. Kaydolun ve topluluğumuza katılın.
+            </p>
+            
+            <!-- Embedded Google Form -->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScieHrfpJEAHW31WhpjrEfYPEejcVACsJupQuQjTyV_eb7VDA/viewform?embedded=true" 
+                    width="100%" 
+                    height="500" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0">
+                Yükleniyor…
+            </iframe>
+            
+            <p class="text-gray-600 text-sm text-center mt-4">
+                Kaydolarak <a href="#" class="text-blue-500 hover:text-blue-700">Hizmet Şartları</a> ve <a href="#" class="text-blue-500 hover:text-blue-700">Gizlilik Politikası</a>'nı kabul etmiş olursunuz.
+            </p>
+        </div>
     </div>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
